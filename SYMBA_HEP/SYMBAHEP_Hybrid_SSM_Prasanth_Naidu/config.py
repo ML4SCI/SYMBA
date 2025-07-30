@@ -25,10 +25,7 @@ class ModelConfig:
     nhead: int
     num_encoder_layers: int
     num_decoder_layers: int
-    # kan_ff_dims: List[int]
     ff_dims: int
-    # is_kan: bool
-    # is_pre_norm: bool
     
     # Optimization & Regularization
     warmup_ratio: float
@@ -51,7 +48,6 @@ class ModelConfig:
     resume_best: bool
 
     # Optional Parameters
-    kan_grid_size:Optional[int] = 8
     dtype: Optional[str] = 'bfloat16'
     run_id: Optional[str] = None
     backend: Optional[str] = 'nccl'
@@ -99,13 +95,6 @@ class ModelTestConfig:
     # Number of encoder layers in the transformer model
     num_encoder_layers : int
     num_decoder_layers: int
-
-    # KAN setting
-    # kan_ff_dims: List[int]
-    # is_kan:bool
-    # is_pre_norm: bool
-
-
     
     # FFN dims
     ff_dims: int
@@ -117,8 +106,6 @@ class ModelTestConfig:
     src_max_len: int
     tgt_max_len: int
     is_termwise: bool
-    
-    kan_grid_size:Optional[int] = 8
 
     # Size of vocabulary for source and target sequences
     src_voc_size: Optional[int] = None
