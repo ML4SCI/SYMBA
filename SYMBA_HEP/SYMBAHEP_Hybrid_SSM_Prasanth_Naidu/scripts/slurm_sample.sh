@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#SBATCH -A m4392
+#SBATCH -C gpu&hbm80g
+#SBATCH -G 4
+#SBATCH -q regular
+#SBATCH -t 48:00:00
+#SBATCH -n 1
+#SBATCH -c 128
+#SBATCH --output="/pscratch/sd/p/pr4santh/slurm_logs/slurm-%j.out"
+#SBATCH --error="/pscratch/sd/p/pr4santh/slurm_logs/slurm-%j.out"
+#SBATCH --mail-user=$email
+#SBATCH --mail-type=ALL
+
+module load pytorch
+
+torchrun --nnodes=1 --nproc_per_node=1 -m SYMBA_SSM.main --project_name simple_exp \
+        --run_name run_1 \
+        --model_name enc_dec \
+        --root_dir /pscratch/sd/p/pr4santh/results/symba \
+        --data_dir /pscratch/sd/p/pr4santh/Data/permutation_free/EW-2-to-2/ \
+        --device cuda \
+        --epochs 5 \
+        --training_batch_size 16 \
+        --valid_batch_size 16 \
+        --num_workers 64 \
+        --embedding_size 512 \
+        --ff_dims 512 \
+        --nhead 8 \
+        --num_encoder_layers 2 \
+        --num_decoder_layers 4 \
+        --warmup_ratio 0.1 \
+        --dropout 0.2 \
+        --weight_decay 0.01 \
+        --optimizer_lr 0.00005 \
+        --src_max_len 3400 \
+        --tgt_max_len 4028 \
+        --curr_epoch 0 \
+        --debug \
+        --save_last \
+        --filter_len
+        # --truncate
+
+
