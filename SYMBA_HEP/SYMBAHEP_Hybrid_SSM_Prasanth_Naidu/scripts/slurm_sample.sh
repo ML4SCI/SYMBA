@@ -4,14 +4,15 @@
 #SBATCH -C gpu&hbm80g
 #SBATCH -G 4
 #SBATCH -q regular
-#SBATCH -t 48:00:00
+#SBATCH -t 2:00:00
 #SBATCH -n 1
 #SBATCH -c 128
 #SBATCH --output="/pscratch/sd/p/pr4santh/slurm_logs/slurm-%j.out"
 #SBATCH --error="/pscratch/sd/p/pr4santh/slurm_logs/slurm-%j.out"
-#SBATCH --mail-user=$email
+#SBATCH --mail-user=prasanthnaidukaraka@gmail.com
 #SBATCH --mail-type=ALL
 
+conda activate ssm_env
 module load pytorch
 
 torchrun --nnodes=1 --nproc_per_node=1 -m SYMBA_SSM.main --project_name simple_exp \
