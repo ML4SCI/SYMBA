@@ -139,7 +139,7 @@ To run the pipeline **directly with the latest improvements**:
 ## Blog
 
 Read the detailed writeup here:
-[Learning Symbolic Expressions from Data Clouds](docs/BLOG_LINK.md)
+[Learning Symbolic Expressions from Data Clouds](https://medium.com/@krishmalikus/learning-symbolic-expressions-from-data-clouds-d186f05435bd)
 
 ---
 
