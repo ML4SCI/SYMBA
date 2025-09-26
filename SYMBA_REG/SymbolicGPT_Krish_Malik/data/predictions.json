@@ -1,0 +1,487 @@
+[
+  {
+    "id": 0,
+    "prediction": "mul exp mul mul const \u27e8C\u27e9 pow id theta const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul exp mul mul const \u27e8C\u27e9 pow id theta const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 1,
+    "prediction": "mul exp mul mul const \u27e8C\u27e9 pow mul id theta pow id sigma const \u27e8C\u27e9 const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow mul <FUNC_5> pi const \u27e8C\u27e9 id sigma const \u27e8C\u27e9",
+    "ground_truth": "mul exp mul mul const \u27e8C\u27e9 pow mul id theta pow id sigma const \u27e8C\u27e9 const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow mul <FUNC_5> pi const \u27e8C\u27e9 id sigma const \u27e8C\u27e9"
+  },
+  {
+    "id": 2,
+    "prediction": "mul exp mul mul const \u27e8C\u27e9 pow mul add id theta mul const \u27e8C\u27e9 id theta1 pow id sigma const \u27e8C\u27e9 const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow mul <FUNC_5> pi const \u27e8C\u27e9 id sigma const \u27e8C\u27e9",
+    "ground_truth": "mul exp mul mul const \u27e8C\u27e9 pow mul add id theta mul const \u27e8C\u27e9 id theta1 pow id sigma const \u27e8C\u27e9 const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow mul <FUNC_5> pi const \u27e8C\u27e9 id sigma const \u27e8C\u27e9"
+  },
+  {
+    "id": 3,
+    "prediction": "pow add pow add id x2 mul const \u27e8C\u27e9 id x1 const \u27e8C\u27e9 pow add id y2 mul const \u27e8C\u27e9 id y1 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "pow add pow add id x2 mul const \u27e8C\u27e9 id x1 const \u27e8C\u27e9 pow add id y2 mul const \u27e8C\u27e9 id y1 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 4,
+    "prediction": "<FUNC_10> id m2 pow add add pow add id x2 mul const \u27e8C\u27e9 id x1 const \u27e8C\u27e9 pow add id y2 mul const \u27e8C\u27e9 id y1 const \u27e8C\u27e9 pow add id z2 mul const \u27e8C\u27e9 id z1 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_10> id m2 pow add add pow add id x2 mul const \u27e8C\u27e9 id x1 const \u27e8C\u27e9 pow add id y2 mul const \u27e8C\u27e9 id y1 const \u27e8C\u27e9 pow add id z2 mul const \u27e8C\u27e9 id z1 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 5,
+    "prediction": "mul id x1 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul id m_0 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 6,
+    "prediction": "add add mul id x1 id y1 mul id x2 id y2 mul id x3 id y3",
+    "ground_truth": "add add mul id x1 id y1 mul id x2 id y2 mul id x3 id y3"
+  },
+  {
+    "id": 7,
+    "prediction": "mul id mu id Nn",
+    "ground_truth": "mul id mu id Nn"
+  },
+  {
+    "id": 8,
+    "prediction": "mul <FUNC_11> q2 id r pow <FUNC_7> id epsilon pow id r const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul <FUNC_11> q2 id r pow <FUNC_7> id epsilon pow id r const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 9,
+    "prediction": "<FUNC_11> r pow <FUNC_7> id epsilon pow id r const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_11> r pow <FUNC_7> id epsilon pow id r const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 10,
+    "prediction": "mul id q2 id Ef",
+    "ground_truth": "mul id q2 id Ef"
+  },
+  {
+    "id": 11,
+    "prediction": "mul id q add id Ef mul mul id B id v sin id theta",
+    "ground_truth": "mul id q add id Ef mul mul id B id v sin id theta"
+  },
+  {
+    "id": 12,
+    "prediction": "<FUNC_2> \u27e8C\u27e9 id m add add pow id v const \u27e8C\u27e9 pow id u const \u27e8C\u27e9 pow id T const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_2> \u27e8C\u27e9 id m add add pow id v const \u27e8C\u27e9 pow id u const \u27e8C\u27e9 pow id w const \u27e8C\u27e9"
+  },
+  {
+    "id": 13,
+    "prediction": "<FUNC_10> id m2 add mul const \u27e8C\u27e9 pow id r2 const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul const \u27e8C\u27e9 pow id r1 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_10> id m2 add mul const \u27e8C\u27e9 pow id r2 const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul const \u27e8C\u27e9 pow id r1 const \u27e8C\u27e9"
+  },
+  {
+    "id": 14,
+    "prediction": "<FUNC_12> g id z",
+    "ground_truth": "<FUNC_12> g id z"
+  },
+  {
+    "id": 15,
+    "prediction": "<FUNC_2> \u27e8C\u27e9 id k_spring pow id x const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_2> \u27e8C\u27e9 id k_spring pow id x const \u27e8C\u27e9"
+  },
+  {
+    "id": 16,
+    "prediction": "mul add id x mul const \u27e8C\u27e9 mul id u id t pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id u const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul add id x mul const \u27e8C\u27e9 mul id u id t pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id u const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 17,
+    "prediction": "mul add id t mul const \u27e8C\u27e9 mul mul id u id x pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id u const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul add id t mul const \u27e8C\u27e9 mul mul id u id x pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id u const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 18,
+    "prediction": "mul mul id <FUNC_19> id v pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul id m_0 id v pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 19,
+    "prediction": "mul add id u id v pow add const \u27e8C\u27e9 mul mul id u id v pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul add id u id v pow add const \u27e8C\u27e9 mul mul id u id v pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 20,
+    "prediction": "mul add mul id m1 id r1 mul id m2 id r2 pow add id m1 id m2 const \u27e8C\u27e9",
+    "ground_truth": "mul add mul id m1 id r1 mul id m2 id r2 pow add id m1 id m2 const \u27e8C\u27e9"
+  },
+  {
+    "id": 21,
+    "prediction": "mul mul id r id F sin id theta",
+    "ground_truth": "mul mul id r id F sin id theta"
+  },
+  {
+    "id": 22,
+    "prediction": "mul <FUNC_12> r id v sin id theta",
+    "ground_truth": "mul <FUNC_12> r id v sin id theta"
+  },
+  {
+    "id": 23,
+    "prediction": "mul mul <FUNC_13> id m add pow id omega const \u27e8C\u27e9 pow id omega_0 const \u27e8C\u27e9 const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow id x const \u27e8C\u27e9",
+    "ground_truth": "mul mul <FUNC_13> id m add pow id omega const \u27e8C\u27e9 pow id omega_0 const \u27e8C\u27e9 const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow id x const \u27e8C\u27e9"
+  },
+  {
+    "id": 24,
+    "prediction": "mul id q pow id C const \u27e8C\u27e9",
+    "ground_truth": "mul id q pow id C const \u27e8C\u27e9"
+  },
+  {
+    "id": 25,
+    "prediction": "mul const \u27e8C\u27e9 pow add mul const \u27e8C\u27e9 pow id d1 const \u27e8C\u27e9 mul id n pow id d2 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul const \u27e8C\u27e9 pow add mul const \u27e8C\u27e9 pow id d1 const \u27e8C\u27e9 mul id n pow id d2 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 26,
+    "prediction": "mul id omega pow id c const \u27e8C\u27e9",
+    "ground_truth": "mul id omega pow id c const \u27e8C\u27e9"
+  },
+  {
+    "id": 27,
+    "prediction": "pow add add pow id x1 const \u27e8C\u27e9 pow id x2 const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul <FUNC_0> x1 id x2 cos add id theta1 mul const \u27e8C\u27e9 id theta2 const \u27e8C\u27e9",
+    "ground_truth": "pow add add pow id x1 const \u27e8C\u27e9 pow id x2 const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul <FUNC_0> x1 id x2 cos add id theta1 mul const \u27e8C\u27e9 id theta2 const \u27e8C\u27e9"
+  },
+  {
+    "id": 28,
+    "prediction": "mul mul id Int_0 pow sin <FUNC_3> theta pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow sin mul id theta pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul id Int_0 pow sin <FUNC_3> theta pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow sin mul id theta pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 29,
+    "prediction": "mul mul pow id q const \u27e8C\u27e9 pow id a const \u27e8C\u27e9 pow <FUNC_7> id epsilon pow id c const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul pow id q const \u27e8C\u27e9 pow id a const \u27e8C\u27e9 pow <FUNC_7> id epsilon pow id c const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 30,
+    "prediction": "mul mul mul mul mul mul <FUNC_13> id epsilon id c pow id Ef const \u27e8C\u27e9 const \u27e8C\u27e9 id pi pow id r const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow id omega const \u27e8C\u27e9 pow pow add pow id omega const \u27e8C\u27e9 mul const \u27e8C\u27e9 pow id omega_0 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul mul mul mul <FUNC_13> id epsilon id c pow id Ef const \u27e8C\u27e9 const \u27e8C\u27e9 id pi pow id r const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9 pow id omega const \u27e8C\u27e9 pow pow add pow id omega const \u27e8C\u27e9 mul const \u27e8C\u27e9 pow id omega_0 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 31,
+    "prediction": "<FUNC_14> id B pow id p const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_14> id B pow id p const \u27e8C\u27e9"
+  },
+  {
+    "id": 32,
+    "prediction": "mul id omega_0 pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul id v pow id c const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul id omega_0 pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul id v pow id c const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 33,
+    "prediction": "mul mul add const \u27e8C\u27e9 mul id v pow id c const \u27e8C\u27e9 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 id omega_0",
+    "ground_truth": "mul mul add const \u27e8C\u27e9 mul id v pow id c const \u27e8C\u27e9 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 id omega_0"
+  },
+  {
+    "id": 34,
+    "prediction": "<FUNC_6> pi const \u27e8C\u27e9 id omega",
+    "ground_truth": "<FUNC_6> pi const \u27e8C\u27e9 id omega"
+  },
+  {
+    "id": 35,
+    "prediction": "add add id I1 id I2 mul mul const \u27e8C\u27e9 pow mul id I1 id I2 const \u27e8C\u27e9 cos id delta",
+    "ground_truth": "add add id I1 id I2 mul mul const \u27e8C\u27e9 pow mul id I1 id I2 const \u27e8C\u27e9 cos id delta"
+  },
+  {
+    "id": 36,
+    "prediction": "mul <FUNC_7> id epsilon pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 pow mul id m pow id q const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul <FUNC_7> id epsilon pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 pow mul id m pow id q const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 37,
+    "prediction": "<FUNC_2> \u27e8C\u27e9 id pr id V",
+    "ground_truth": "<FUNC_2> \u27e8C\u27e9 id pr id V"
+  },
+  {
+    "id": 38,
+    "prediction": "mul U const \u27e8C\u27e9 const \u27e8C\u27e9 id pr id V",
+    "ground_truth": "mul <FUNC_16> const \u27e8C\u27e9 const \u27e8C\u27e9 id pr id V"
+  },
+  {
+    "id": 39,
+    "prediction": "<FUNC_17> id T pow id V const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_17> id T pow id V const \u27e8C\u27e9"
+  },
+  {
+    "id": 40,
+    "prediction": "mul id n_0 exp mul mul <FUNC_0> m id g id x pow mul id kb id T const \u27e8C\u27e9",
+    "ground_truth": "mul id n_0 exp mul mul <FUNC_0> m id g id x pow mul id kb id T const \u27e8C\u27e9"
+  },
+  {
+    "id": 41,
+    "prediction": "<FUNC_18> const \u27e8C\u27e9 pow id omega const \u27e8C\u27e9 pow mul mul pow id pi const \u27e8C\u27e9 pow id c const \u27e8C\u27e9 add exp <FUNC_18> const \u27e8C\u27e9 id omega pow mul id kb id T const \u27e8C\u27e9 mul const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_18> const \u27e8C\u27e9 pow id omega const \u27e8C\u27e9 pow mul mul pow id pi const \u27e8C\u27e9 pow id c const \u27e8C\u27e9 add exp <FUNC_18> const \u27e8C\u27e9 id omega pow mul id kb id T const \u27e8C\u27e9 mul const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 42,
+    "prediction": "mul mul mul id mu_drift id q id Volt pow id d const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul id mu_drift id q id Volt pow id d const \u27e8C\u27e9"
+  },
+  {
+    "id": 43,
+    "prediction": "mul mul id mob id kb id T",
+    "ground_truth": "mul mul id mob id kb id T"
+  },
+  {
+    "id": 44,
+    "prediction": "mul mul <FUNC_13> const \u27e8C\u27e9 const \u27e8C\u27e9 id kb id v pow id A const \u27e8C\u27e9",
+    "ground_truth": "mul mul <FUNC_16> const \u27e8C\u27e9 const \u27e8C\u27e9 id kb id v pow id A const \u27e8C\u27e9"
+  },
+  {
+    "id": 45,
+    "prediction": "<FUNC_17> id T log mul id V2 pow id V1 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_17> id T log mul id V2 pow id V1 const \u27e8C\u27e9"
+  },
+  {
+    "id": 46,
+    "prediction": "pow mul mul id gamma id pr pow id rho const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "pow mul mul id gamma id pr pow id rho const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 47,
+    "prediction": "mul mul id m pow id c const \u27e8C\u27e9 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul id m pow id c const \u27e8C\u27e9 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 48,
+    "prediction": "mul id x1 add cos mul id omega id t mul id alpha pow cos mul id omega id t const \u27e8C\u27e9",
+    "ground_truth": "mul id x1 add cos mul id omega id t mul id alpha pow cos mul id omega id t const \u27e8C\u27e9"
+  },
+  {
+    "id": 49,
+    "prediction": "mul mul mul id kappa add id T2 mul const \u27e8C\u27e9 id T1 id A pow id d const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul id kappa add id T2 mul const \u27e8C\u27e9 id T1 id A pow id d const \u27e8C\u27e9"
+  },
+  {
+    "id": 50,
+    "prediction": "mul id Pwr <FUNC_8> pow id r const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul id Pwr <FUNC_8> pow id r const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 51,
+    "prediction": "mul id q pow <FUNC_7> id epsilon id r const \u27e8C\u27e9",
+    "ground_truth": "mul id q pow <FUNC_7> id epsilon id r const \u27e8C\u27e9"
+  },
+  {
+    "id": 52,
+    "prediction": "mul mul mul mul const \u27e8C\u27e9 <FUNC_8> id epsilon const \u27e8C\u27e9 id p_d cos id theta pow pow id r const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul mul const \u27e8C\u27e9 <FUNC_8> id epsilon const \u27e8C\u27e9 id p_d cos id theta pow pow id r const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 53,
+    "prediction": "mul mul mul <FUNC_19> id epsilon const \u27e8C\u27e9 const \u27e8C\u27e9 id z pow pow id r const \u27e8C\u27e9 const \u27e8C\u27e9 pow add pow id x const \u27e8C\u27e9 pow id y const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul <FUNC_19> id epsilon const \u27e8C\u27e9 const \u27e8C\u27e9 id z pow pow id r const \u27e8C\u27e9 const \u27e8C\u27e9 pow add pow id x const \u27e8C\u27e9 pow id y const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 54,
+    "prediction": "mul mul mul <FUNC_19> id epsilon const \u27e8C\u27e9 const \u27e8C\u27e9 cos id theta sin id theta pow pow id r const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul <FUNC_19> id epsilon const \u27e8C\u27e9 const \u27e8C\u27e9 cos id theta sin id theta pow pow id r const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 55,
+    "prediction": "<FUNC_2> \u27e8C\u27e9 pow id q const \u27e8C\u27e9 pow <FUNC_7> id epsilon id d const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_2> \u27e8C\u27e9 pow id q const \u27e8C\u27e9 pow <FUNC_7> id epsilon id d const \u27e8C\u27e9"
+  },
+  {
+    "id": 56,
+    "prediction": "mul mul id epsilon pow id Ef const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul id epsilon pow id Ef const \u27e8C\u27e9 pow const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 57,
+    "prediction": "mul mul mul id sigma_den pow id epsilon const \u27e8C\u27e9 const \u27e8C\u27e9 pow add const \u27e8C\u27e9 id chi const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul id sigma_den pow id epsilon const \u27e8C\u27e9 const \u27e8C\u27e9 pow add const \u27e8C\u27e9 id chi const \u27e8C\u27e9"
+  },
+  {
+    "id": 58,
+    "prediction": "<FUNC_4> Ef pow mul id m add pow id omega_0 const \u27e8C\u27e9 mul const \u27e8C\u27e9 pow id omega const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_4> Ef pow mul id m add pow id omega_0 const \u27e8C\u27e9 mul const \u27e8C\u27e9 pow id omega const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 59,
+    "prediction": "mul id n_0 add const \u27e8C\u27e9 mul mul mul id p_d id Ef cos id theta pow mul id kb id T const \u27e8C\u27e9",
+    "ground_truth": "mul id n_0 add const \u27e8C\u27e9 mul mul mul id p_d id Ef cos id theta pow mul id kb id T const \u27e8C\u27e9"
+  },
+  {
+    "id": 60,
+    "prediction": "mul mul mul id n_rho pow id p_d const \u27e8C\u27e9 id Ef pow <FUNC_0> kb id T const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul id n_rho pow id p_d const \u27e8C\u27e9 id Ef pow <FUNC_0> kb id T const \u27e8C\u27e9"
+  },
+  {
+    "id": 61,
+    "prediction": "mul mul <FUNC_3> alpha pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 <FUNC_3> alpha pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 id epsilon id Ef",
+    "ground_truth": "mul mul <FUNC_3> alpha pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 <FUNC_3> alpha pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 id epsilon id Ef"
+  },
+  {
+    "id": 62,
+    "prediction": "add const \u27e8C\u27e9 <FUNC_3> alpha pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 <FUNC_3> alpha pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "add const \u27e8C\u27e9 <FUNC_3> alpha pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 <FUNC_3> alpha pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 63,
+    "prediction": "mul mul mul mul const \u27e8C\u27e9 pow <FUNC_7> id epsilon pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 id I pow id r const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul mul const \u27e8C\u27e9 pow <FUNC_7> id epsilon pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 id I pow id r const \u27e8C\u27e9"
+  },
+  {
+    "id": 64,
+    "prediction": "mul id rho_c_0 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul id rho_c_0 pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 65,
+    "prediction": "mul mul id rho_c_0 id v pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul id rho_c_0 id v pow pow add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id v const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 66,
+    "prediction": "mul <FUNC_0> mom id B cos id theta",
+    "ground_truth": "mul <FUNC_0> mom id B cos id theta"
+  },
+  {
+    "id": 67,
+    "prediction": "mul <FUNC_0> p_d id Ef cos id theta",
+    "ground_truth": "mul <FUNC_0> p_d id Ef cos id theta"
+  },
+  {
+    "id": 68,
+    "prediction": "mul id q pow mul <FUNC_7> id epsilon id r add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul id v pow id c const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul id q pow mul <FUNC_7> id epsilon id r add const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul id v pow id c const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 69,
+    "prediction": "pow add mul pow id omega const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id pi const \u27e8C\u27e9 pow pow id d const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "pow add mul pow id omega const \u27e8C\u27e9 pow pow id c const \u27e8C\u27e9 const \u27e8C\u27e9 mul const \u27e8C\u27e9 mul pow id pi const \u27e8C\u27e9 pow pow id d const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 70,
+    "prediction": "mul mul id epsilon id c pow id Ef const \u27e8C\u27e9",
+    "ground_truth": "mul mul id epsilon id c pow id Ef const \u27e8C\u27e9"
+  },
+  {
+    "id": 71,
+    "prediction": "mul id epsilon pow id Ef const \u27e8C\u27e9",
+    "ground_truth": "mul id epsilon pow id Ef const \u27e8C\u27e9"
+  },
+  {
+    "id": 72,
+    "prediction": "<FUNC_4> v <FUNC_8> id r const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_4> v <FUNC_8> id r const \u27e8C\u27e9"
+  },
+  {
+    "id": 73,
+    "prediction": "<FUNC_14> id r pow const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_14> id r pow const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 74,
+    "prediction": "mul mul mul id g_ id q id B <FUNC_5> m const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul id g_ id q id B <FUNC_5> m const \u27e8C\u27e9"
+  },
+  {
+    "id": 75,
+    "prediction": "<FUNC_4> h <FUNC_8> id m const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_4> h <FUNC_8> id m const \u27e8C\u27e9"
+  },
+  {
+    "id": 76,
+    "prediction": "mul mul mul mul id g_ id mom id B id Jz pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul mul id g_ id mom id B id Jz pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 77,
+    "prediction": "mul id n_0 pow add exp mul mul id mom id B pow mul id kb id T const \u27e8C\u27e9 exp mul <FUNC_0> mom id B pow mul id kb id T const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul id n_0 pow add exp mul mul id mom id B pow mul id kb id T const \u27e8C\u27e9 exp mul <FUNC_0> mom id B pow mul id kb id T const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 78,
+    "prediction": "mul mul id n_rho id mom tanh mul mul id mom id B pow mul id kb id T const \u27e8C\u27e9",
+    "ground_truth": "mul mul id n_rho id mom tanh mul mul id mom id B pow mul id kb id T const \u27e8C\u27e9"
+  },
+  {
+    "id": 79,
+    "prediction": "add mul mul id mom id tanh pow mul id kb id T const \u27e8C\u27e9 mul mul mul id mom id alpha pow mul mul mul id epsilon pow id c const \u27e8C\u27e9 id kb id T const \u27e8C\u27e9 id omega_0",
+    "ground_truth": "add mul mul id mom id H pow mul id kb id T const \u27e8C\u27e9 mul mul mul id mom id alpha pow mul mul mul id epsilon pow id c const \u27e8C\u27e9 id kb id T const \u27e8C\u27e9 id M"
+  },
+  {
+    "id": 80,
+    "prediction": "mul mul id mom add const \u27e8C\u27e9 id chi id B",
+    "ground_truth": "mul mul id mom add const \u27e8C\u27e9 id chi id B"
+  },
+  {
+    "id": 81,
+    "prediction": "mul mul mul id Y id A id x pow id d const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul id Y id A id x pow id d const \u27e8C\u27e9"
+  },
+  {
+    "id": 82,
+    "prediction": "mul id Y pow mul const \u27e8C\u27e9 add const \u27e8C\u27e9 id sigma const \u27e8C\u27e9",
+    "ground_truth": "mul id Y pow mul const \u27e8C\u27e9 add const \u27e8C\u27e9 id sigma const \u27e8C\u27e9"
+  },
+  {
+    "id": 83,
+    "prediction": "mul const \u27e8C\u27e9 pow add exp <FUNC_18> const \u27e8C\u27e9 id omega pow mul id kb id T const \u27e8C\u27e9 mul const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul const \u27e8C\u27e9 pow add exp <FUNC_18> const \u27e8C\u27e9 id omega pow mul id kb id T const \u27e8C\u27e9 mul const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 84,
+    "prediction": "<FUNC_18> const \u27e8C\u27e9 id omega pow add exp <FUNC_18> const \u27e8C\u27e9 id omega pow mul id kb id T const \u27e8C\u27e9 mul const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_18> const \u27e8C\u27e9 id omega pow add exp <FUNC_18> const \u27e8C\u27e9 id omega pow mul id kb id T const \u27e8C\u27e9 mul const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 85,
+    "prediction": "mul <FUNC_0> mom id B pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul <FUNC_0> mom id B pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 86,
+    "prediction": "pow sin mul mul id E_n id t pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "pow sin mul mul id E_n id t pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 87,
+    "prediction": "mul mul mul mul mul id p_d id Ef id t pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 pow sin mul mul add id omega mul const \u27e8C\u27e9 id omega_0 id t pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow mul mul add id omega mul const \u27e8C\u27e9 id omega_0 id t pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul mul mul id p_d id Ef id t pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 pow sin mul mul add id omega mul const \u27e8C\u27e9 id omega_0 id t pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow mul mul add id omega mul const \u27e8C\u27e9 id omega_0 id t pow const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 88,
+    "prediction": "mul id mom pow add add pow id Bx const \u27e8C\u27e9 pow id By const \u27e8C\u27e9 pow id Bz const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul id mom pow add add pow id Bx const \u27e8C\u27e9 pow id By const \u27e8C\u27e9 pow id Bz const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 89,
+    "prediction": "<FUNC_3> h <FUNC_5> pi const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_3> h <FUNC_5> pi const \u27e8C\u27e9"
+  },
+  {
+    "id": 90,
+    "prediction": "mul mul <FUNC_0> E_n pow id d const \u27e8C\u27e9 id k pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul <FUNC_0> E_n pow id d const \u27e8C\u27e9 id k pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 91,
+    "prediction": "<FUNC_0> U add const \u27e8C\u27e9 mul const \u27e8C\u27e9 cos mul id k id d",
+    "ground_truth": "<FUNC_0> U add const \u27e8C\u27e9 mul const \u27e8C\u27e9 cos mul id k id d"
+  },
+  {
+    "id": 92,
+    "prediction": "mul pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 pow <FUNC_0> E_n pow id d const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 pow <FUNC_0> E_n pow id d const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 93,
+    "prediction": "<FUNC_7> id alpha pow mul id n id d const \u27e8C\u27e9",
+    "ground_truth": "<FUNC_7> id alpha pow mul id n id d const \u27e8C\u27e9"
+  },
+  {
+    "id": 94,
+    "prediction": "mul id mu add const \u27e8C\u27e9 mul id alpha cos id theta",
+    "ground_truth": "mul id beta add const \u27e8C\u27e9 mul id alpha cos id theta"
+  },
+  {
+    "id": 95,
+    "prediction": "mul mul mul <FUNC_0> m pow id q const \u27e8C\u27e9 pow mul mul const \u27e8C\u27e9 <FUNC_8> id epsilon const \u27e8C\u27e9 pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow id n const \u27e8C\u27e9 const \u27e8C\u27e9",
+    "ground_truth": "mul mul mul <FUNC_0> m pow id q const \u27e8C\u27e9 pow mul mul const \u27e8C\u27e9 <FUNC_8> id epsilon const \u27e8C\u27e9 pow mul id h <FUNC_5> pi const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 const \u27e8C\u27e9 pow pow id n const \u27e8C\u27e9 const \u27e8C\u27e9"
+  },
+  {
+    "id": 96,
+    "prediction": "mul mul <FUNC_0> rho_c_0 id q id A_vec pow id m const \u27e8C\u27e9",
+    "ground_truth": "mul mul <FUNC_0> rho_c_0 id q id A_vec pow id m const \u27e8C\u27e9"
+  }
+]
