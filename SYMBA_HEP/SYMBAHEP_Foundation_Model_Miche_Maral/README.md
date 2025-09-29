@@ -1,6 +1,6 @@
 # Foundational Model for High Energy Physics - Symbolic Regression
 ### Google Summer of Code 2025 - Final Work Product
-
+#### Medium Post - https://medium.com/@michemarall/google-school-of-code-foundational-model-in-high-energy-physics-symbolic-regression-3d0311b01dad
 ---
 
 **Organizations:** Google School of Code & University of Alabama
