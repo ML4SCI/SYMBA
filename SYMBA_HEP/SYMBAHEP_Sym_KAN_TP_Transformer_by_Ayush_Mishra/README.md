@@ -1,11 +1,9 @@
-# SymKAN-TP-Transformer (Tensor-Product Transformer combined with SineKAN and Sympy)
+This Repository is part of SYMBA Project under GSoC 2025 Program, This Repository contains Implementations of two architectures
+1. SymKAN-TP-Transformer
+2. SineKAN-MoE
 
-This Repository is a part of SYMBA project, which is part of GSOC 2025 
-
-Problem Statement : <a href="https://ml4sci.org/gsoc/2025/proposal_SYMBA6.html" style="color:blue;">Problem Statement Link</a>
-
-Blog Post : <a href="https://medium.com/@ayush89718/exploring-squared-amplitudes-in-high-energy-physics-with-ml4sci-my-gsoc-journey-453a2349f9d5" style="color:blue;">Blog Link</a>
-
+Find the Implementation of SineKAN-MoE in the `./src` directory or directly click this link **<a href = "https://github.com/Ayushmishra05/SymKAN-TP-Transformer/tree/main/src/SineKAN_MoE" style = "color:blue"> SineKAN-MoE </a>** 
+# SymKAN-TP-Transformer (Tensor-Product Transformer combined with SineKAN)
 
 ## Project Structure 
 ```
@@ -25,6 +23,12 @@ Blog Post : <a href="https://medium.com/@ayush89718/exploring-squared-amplitudes
 │   ├── __init__.py
 │   ├── sym_kan_transformer
 │   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── build_model.cpython-312.pyc
+│   │   │   ├── config.cpython-312.pyc
+│   │   │   ├── model.cpython-312.pyc
+│   │   │   ├── tokenizer.cpython-312.pyc
+│   │   │   └── train.cpython-312.pyc
 │   │   ├── build_model.py
 │   │   ├── config.py
 │   │   ├── model.py
@@ -35,39 +39,6 @@ Blog Post : <a href="https://medium.com/@ayush89718/exploring-squared-amplitudes
 │       └── vanilla_transformer.py
 └── train_sym_kan_transformer.py
 
-```
-
-### Using this Repository 
-
-Create Virtual Environment in Python (Windows)
-```bash
-python -m venv venv 
-venv/Scripts/activate
-```
-
-Create Virtual Environment in Python (MacOs/Linux)
-```bash
-python3 -m venv venv 
-source venv/bin/activate
-```
-
-
-Clone the repository 
-
-```bash
-git clone https://github.com/Ayushmishra05/SymKAN-TP-Transformer
-```
-
-Train the model using terminal arguments
-
-```bash
-python train_sym_kan_transformer.py --epochs = 10
-```
-
-You can also train the model using the train.py file
-
-```bash
-python src/sym_kan_transformer/train.py
 ```
 
 ## Task 1 :  Extracting the Data From the sources 
@@ -112,10 +83,6 @@ Encoding for Math Problem Solving </a>**
   * This Motivated me to integrate it in the architecture, the last Softmax layer from the Transformer was replaced by the SineKAN Layer.
 
   * This helped the model to generate and understand the rule-based sequences 
-
-  * Find the SineKAN Model paper here <a href="https://arxiv.org/html/2407.04149v1" style="color:blue;">SineKAN</a>
-  
-
 
 
   ### Model Efficiency 
