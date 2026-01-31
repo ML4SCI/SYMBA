@@ -1,0 +1,37 @@
+# Core
+python>=3.8
+
+# Data handling
+numpy
+pandas
+csvkit
+
+# PyTorch
+torch
+torchvision
+torchaudio
+
+# Torch utilities
+torchtext
+
+# Transformers
+transformers
+datasets
+
+# Training & optimization
+optuna
+tqdm
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+scikit-learn
+regex
+
+# Mixed precision & performance
+accelerate
+
+# Warnings / configs
+dataclasses; python_version < "3.7"
