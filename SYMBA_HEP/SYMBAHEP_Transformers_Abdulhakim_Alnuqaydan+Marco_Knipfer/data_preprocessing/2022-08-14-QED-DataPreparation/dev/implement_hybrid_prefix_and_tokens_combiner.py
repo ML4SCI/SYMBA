@@ -95,22 +95,17 @@ def _queue_mgr(func_str: str, q_in: mp.Queue, q_out: mp.Queue, timeout: int, pid
         proc = mp.Process(target=_lemmiwinks, args=(func_str, (x,), {}, q_worker,))
         proc.start()
         try:
-            # print(f'[{pid}]: {positioning}: getting')
             res = q_worker.get(timeout=timeout)
-            # print(f'[{pid}]: {positioning}: got')
             q_out.put((positioning, res))
         except mpq.Empty:
             q_out.put((positioning, sp.sympify(x)))
-            # print(f'[{pid}]: {positioning}: timed out ({timeout}s)')
             with open(timeout_logfile, "a") as f:
                 f.write("Timed out after "+str(timeout)+" seconds. Argument:" + x + "\n")
         finally:
             try:
                 proc.terminate()
-                # print(f'[{pid}]: {positioning}: terminated')
             except:
                 pass
-    # print(f'[{pid}]: completed!')
 
 
 def killer_pmap(func: Callable, iterable: Iterable, cpus: Optional[int] = None, timeout: int = 10*60,
@@ -140,7 +135,7 @@ def killer_pmap(func: Callable, iterable: Iterable, cpus: Optional[int] = None, 
         mp.Process(target=_queue_mgr, args=(dill.dumps(func), q_in, q_out, timeout, pid, timeout_logfile))
         for pid in range(cpus)
     ]
-    # print(f'Started {len(processes)} processes')
+
     for proc in processes:
         proc.start()
 

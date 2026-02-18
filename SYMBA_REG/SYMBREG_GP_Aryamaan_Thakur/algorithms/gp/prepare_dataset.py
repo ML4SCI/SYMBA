@@ -27,12 +27,10 @@ def get_args_parser():
 #    """
 #    total = len(list(iterable))
 #    # Progress Bar Printing Function
-#    print(total)
 #    def printProgressBar (iteration):
 #        percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
 #        filledLength = int(length * iteration // total)
 #        bar = fill * filledLength + '-' * (length - filledLength)
-#        print(f'\rProgress |{bar}| {percent}% Complete', end = printEnd)
 #    # Initial Call
 #    printProgressBar(0)
 #    # Update Progress Bar
@@ -40,7 +38,7 @@ def get_args_parser():
 #        yield item
 #        printProgressBar(i + 1)
 #    # Print New Line on Complete
-#    print()
+
 
 def main(args):
     df = pd.read_csv(args.dataframe_path)

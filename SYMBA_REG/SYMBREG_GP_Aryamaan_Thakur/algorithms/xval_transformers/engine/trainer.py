@@ -276,8 +276,6 @@ class Trainer:
             y_pred = predictor.predict(src[0].unsqueeze(0), num_array[0].unsqueeze(0)) #only one example from each batch
             y_preds.append(y_pred.cpu().numpy())
             y_true.append(np.trim_zeros(tgt[0]))
-            # print("pred", y_pred.cpu().tolist())
-            # print("true", y_true[-1].tolist())
             
         test_accuracy_seq = sequence_accuracy(y_true, y_preds)
         f= open(os.path.join(self.logs_dir, "score.txt"),"w+")

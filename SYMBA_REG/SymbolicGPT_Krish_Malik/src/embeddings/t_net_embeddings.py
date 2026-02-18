@@ -126,6 +126,4 @@ with open("tnet_embeddings.json", "w") as f:
 print("✅ Embeddings saved to tnet_embeddings.json")
 # try:
 #     files.download("tnet_embeddings.json") # Uncomment if in Google Colab
-#     print("✅ tnet_embeddings.json downloaded.")
 # except Exception as e:
-#     print(f"❗ Could not download file (likely not in Google Colab environment): {e}")

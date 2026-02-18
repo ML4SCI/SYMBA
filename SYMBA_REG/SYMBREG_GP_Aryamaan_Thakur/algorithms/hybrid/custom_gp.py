@@ -153,7 +153,6 @@ class CustomGP:
         for i in range(pop_size - len(population)):
             random_candidate = toolbox.individual()
             population.append(random_candidate)
-        #print(population)
         return population
 
     @staticmethod
