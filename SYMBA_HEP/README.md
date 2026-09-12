@@ -12,7 +12,7 @@ Computing squared amplitudes of feynman diagrams from amplitudes is an $O(N^2)$ 
 |---Hybrid SSM
 |---Sym KAN / TP Transformer
 |---Foundation Model
-|---AmpGNN Physics-Informed Graphs (Ria Khatoniar)
+|---AmpGNN Physics-Informed Graphs
 |---
 ```
 
