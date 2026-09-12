@@ -9,6 +9,10 @@ Computing squared amplitudes of feynman diagrams from amplitudes is an $O(N^2)$ 
 |---Vanilla Transformers + Original Data Generation
 |---Longformer and BART + Engine
 |---SKANFormer + Engine Updates + Updated Data Generation
+|---Hybrid SSM
+|---Sym KAN / TP Transformer
+|---Foundation Model
+|---AmpGNN Physics-Informed Graphs
 |---
 ```
 
