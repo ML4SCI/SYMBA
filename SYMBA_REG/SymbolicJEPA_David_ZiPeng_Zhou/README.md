@@ -158,7 +158,7 @@ Two independently sampled point clouds from the same underlying function are enc
 
 The downstream model is then trained using the same SymbolicGPT objective as the Numeric-Symbolic experiment.
 
-The reported experiments compare 0 and 10 epochs of Subsample JEPA pretraining.
+The reported Subsample experiment compares 0 and 20 epochs of Subsample JEPA pretraining.
 
 ## Evaluation
 
