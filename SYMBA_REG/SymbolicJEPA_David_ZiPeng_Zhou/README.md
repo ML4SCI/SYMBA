@@ -8,21 +8,27 @@ Two JEPA pretraining methods are included.
 
 **Subsample JEPA** trains the numerical encoder to produce consistent representations for independently sampled point clouds from the same underlying function.
 
-After JEPA pretraining, both models are trained using the same standard SymbolicGPT cross-entropy objective. This keeps downstream training fixed and isolates the effect of representation pretraining.
+After JEPA pretraining, both models are trained using the standard SymbolicGPT cross-entropy objective.
+
+## Project Writeup
+
+A detailed overview of the motivation, methods, experiments, and results is available in the accompanying Medium article:
+
+[JEPA for Symbolic Regression](https://medium.com/@zzpdavid2l/jepa-for-symbolic-regression-791843364837?sharedUserId=zzpdavid2l)
 
 ## Repository structure
 
 ```text
-JEPA/
+SymbolicJEPA_David_ZiPeng_Zhou/
 ├── README.md
 ├── requirements.txt
-├── numeric_symbolic_jepa.ipynb
-├── subsample_jepa.ipynb
+├── numeric_symbolic.ipynb
+├── subsample.ipynb
 │
 ├── data/
 │   ├── README.md
-│   ├── 01_generate_synthetic_data.ipynb
-│   ├── 02_build_template_dataset.ipynb
+│   ├── 01_SYMBA_Reg_Data_Gen.ipynb
+│   ├── 02_build_template_dataset.py
 │   └── synthetic_templates.pkl
 │
 └── symbolic_jepa/
@@ -35,16 +41,16 @@ The `symbolic_jepa` package contains the shared model, tokenizer, dataset, evalu
 
 Google Colab with a GPU runtime is the recommended environment.
 
-To run an experiment, download the desired notebook from this repository and upload it directly to Google Colab.
+To run an experiment, download the desired notebook and upload it directly to Google Colab.
 
 ```text
-numeric_symbolic_jepa.ipynb
+numeric_symbolic.ipynb
 ```
 
 or
 
 ```text
-subsample_jepa.ipynb
+subsample.ipynb
 ```
 
 Select a GPU under
@@ -53,46 +59,32 @@ Select a GPU under
 Runtime > Change runtime type > GPU
 ```
 
-The notebook handles the remaining environment setup, including mounting Google Drive, cloning or updating the repository, and loading the required project files.
+The notebook handles the remaining environment setup, including mounting Google Drive, cloning or updating the repository, and loading the project files.
 
-The required Python packages are listed in `requirements.txt`. The notebook can install them after the repository has been cloned.
+The required Python packages are listed in `requirements.txt`.
 
 ## Google Drive
 
-Google Colab runtimes are temporary, so files stored only in the runtime are lost when the session is reset. The notebooks therefore use Google Drive as persistent storage.
+Google Colab runtimes are temporary, so files stored only in the runtime are lost when the session ends. The experiment notebooks use Google Drive to preserve the repository and experiment state across Colab sessions.
 
-The first time an experiment is run, the notebook mounts Google Drive.
+The notebook first mounts Google Drive.
 
 ```python
 from google.colab import drive
 drive.mount("/content/drive")
 ```
 
-The repository is then cloned into a directory on Google Drive. Subsequent sessions can reuse the same checkout instead of cloning the project again.
-
-A typical layout is
+The repository checkout is stored under Google Drive so it can be reused in later sessions. The default setup uses
 
 ```text
-MyDrive/
-└── Symba/
-    └── symbolic-jepa/
+/content/drive/MyDrive/Symba/
 ```
 
-Keeping the repository on Drive also makes generated data and experiment configuration available across Colab sessions.
+The notebooks also use Google Drive for persistent checkpoint backups. Training itself may use local Colab storage for faster file access, while checkpoints are periodically copied to Drive so an interrupted experiment can be resumed later.
 
-Google Drive is also used to preserve training checkpoints. This is particularly important for longer experiments because Colab runtimes may disconnect before training is complete. Saved checkpoints allow training to resume in a later session rather than restarting from the beginning.
+The Drive directory may therefore contain the repository, generated data, checkpoint backups, TensorBoard logs, and evaluation results.
 
-Depending on the notebook configuration, the Drive directory may contain
-
-```text
-repository
-datasets
-checkpoints
-TensorBoard logs
-evaluation results
-```
-
-The notebook setup cells define the relevant Drive and repository paths. Users can change these paths if they prefer a different location in their own Google Drive.
+The relevant paths are defined near the beginning of each notebook and can be changed if a different Drive layout is preferred.
 
 ## Dataset
 
@@ -104,16 +96,16 @@ A prepared canonical template dataset is included as
 data/synthetic_templates.pkl
 ```
 
-This file is sufficient to run the two final experiment notebooks.
+This file is sufficient to run the final experiment notebooks.
 
-The complete dataset-generation process can also be reproduced from scratch using the two notebooks in the `data` directory.
+The complete data-generation pipeline can also be reproduced from scratch.
 
 ### 1. Generate the raw synthetic dataset
 
 Run
 
 ```text
-data/01_generate_synthetic_data.ipynb
+data/01_SYMBA_Reg_Data_Gen.ipynb
 ```
 
 This generates
@@ -126,28 +118,26 @@ containing instantiated symbolic expressions with sampled numerical constants.
 
 ### 2. Build the canonical template dataset
 
-Next, run
+From the project root, run
 
-```text
-data/02_build_template_dataset.ipynb
+```bash
+python data/02_build_template_dataset.py \
+    --input data/synthetic.pkl \
+    --output data/synthetic_templates.pkl \
+    --max-expressions 200000 \
+    --max-vars 1
 ```
 
 This converts the raw expressions into canonical symbolic templates and constructs the coefficient pools used for dynamic coefficient augmentation.
 
-It produces
-
-```text
-data/synthetic_templates.pkl
-```
-
-Users who only want to run the reported experiments can use the included template dataset and skip these two steps.
+Users who only want to run the reported experiments can use the included `synthetic_templates.pkl` and skip dataset generation.
 
 ## Numeric-Symbolic JEPA
 
 The Numeric-Symbolic experiment is contained in
 
 ```text
-numeric_symbolic_jepa.ipynb
+numeric_symbolic.ipynb
 ```
 
 The numerical encoder is pretrained by aligning its point-cloud representation with a stop-gradient representation of the corresponding symbolic expression.
@@ -161,7 +151,7 @@ The reported experiments compare 0, 10, and 20 epochs of JEPA pretraining.
 The Subsample experiment is contained in
 
 ```text
-subsample_jepa.ipynb
+subsample.ipynb
 ```
 
 Two independently sampled point clouds from the same underlying function are encoded by the numerical encoder. JEPA pretraining encourages their centered representations to agree.
@@ -188,9 +178,11 @@ The first two metrics are teacher-forced diagnostics. Exact match, functional eq
 
 ## Checkpoints and TensorBoard
 
-The experiment notebooks periodically save checkpoints during training. Checkpoints stored on Google Drive persist after the Colab runtime disconnects and can be used to resume an incomplete experiment.
+The experiment notebooks periodically save checkpoints during training.
 
-TensorBoard logs are also saved during training and can be viewed in Colab with
+In Colab, active checkpoints can be stored on the local runtime for faster access while persistent backup copies are stored on Google Drive. If the runtime disconnects, the saved Drive checkpoint can be restored when the experiment is resumed.
+
+TensorBoard logs are also produced during training and can be viewed in Colab with
 
 ```python
 %load_ext tensorboard
