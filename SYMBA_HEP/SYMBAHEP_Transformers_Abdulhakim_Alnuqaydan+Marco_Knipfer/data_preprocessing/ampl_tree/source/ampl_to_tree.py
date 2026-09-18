@@ -591,14 +591,6 @@ def is_index(s: str):
 
 
 if __name__ == "__main__":
-    # with open(sqampls_file) as f:
-    #     ampls = f.readlines()
-    #
-    # print(ampls[0])
-    # print(ampls[100])
-    # print(ampls[-1])
-    # print(ampls[-20])
-
     with open(ampls_raw_file) as f:
         ampls_raw = f.readlines(100000)
         ampls_raw = [a[:-1] for a in ampls_raw]

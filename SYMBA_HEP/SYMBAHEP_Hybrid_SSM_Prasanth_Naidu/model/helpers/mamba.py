@@ -239,7 +239,6 @@ class MixerModel(nn.Module):
         hidden_states = self.embedding.forward(input_ids)
         residual = None
         for idx, layer in enumerate(self.layers):
-            # print('layer: ',idx)
             hidden_states, residual = layer(
                 hidden_states,
                 context=context,
@@ -295,12 +294,10 @@ class MambaDecoder(
         factory_kwargs = {"device": device, "dtype": dtype}
 
         super().__init__()
-        # print(vocab_size)
         # if vocab_size % pad_vocab_size_multiple != 0:
         #     vocab_size += pad_vocab_size_multiple - (
         #         vocab_size % pad_vocab_size_multiple
         #     )
-        # print(vocab_size)
             
         self.backbone = MixerModel(
             d_model=d_model,

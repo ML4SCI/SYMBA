@@ -125,13 +125,6 @@ def tree_to_sympy(tree, expression=None):
     else:
         node = tree._label
         op = operators_inv[node]
-        # num_args = operators_nargs[node]
-        # if num_args != len(tree):
-        #     print("num args not len(tree):")
-        #     ic(num_args)
-        #     ic(len(tree))
-        #     ic(tree)
-        # assert num_args == len(tree)
         return op(*[tree_to_sympy(t) for t in tree])
     return 0
 

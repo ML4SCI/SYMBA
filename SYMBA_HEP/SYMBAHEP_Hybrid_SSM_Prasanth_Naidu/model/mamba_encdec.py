@@ -138,7 +138,6 @@ class MambaEncDec(nn.Module):
             input_ids=context_tokens,
             mask=source_attention_mask,
         )
-        # print(source_vec.dtype, source_attention_mask.dtype)
         cache = self.allocate_inference_cache(
             batch_size=b,
             max_seqlen=300 + l + 1,  # source + BOS
@@ -153,10 +152,6 @@ class MambaEncDec(nn.Module):
         # batch, seqlen, dim = self.decoder.backbone.embedding.forward(input_ids).shape
         # conv_state, ssm_state = self.decoder.backbone.layers[0].mixer._get_states_from_cache(inference_params, b)
         # inference_params = None
-        # print(conv_state.type(),input_ids.type(), source_vec.type())
-        # print(source_attention_mask.type(), target_attention_mask.type())
-        # print(position_ids.type())
-        # print(num_last_tokens)
 
         out = self.decoder.forward(
             input_ids,

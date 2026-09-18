@@ -165,7 +165,6 @@ else:
     print("Resuming calculations, reading progress from "+progress_file)
     with open(progress_file) as f:
         progess_file_contents = [line for line in f.readlines()]
-    # print(progess_file_contents[-6:])
     batch_resume = int(progess_file_contents[-7].split(":")[1]) + 1
     index_resume = int(progess_file_contents[-3].split(":")[1])
     batch_size_resume = int(progess_file_contents[-2].split(":")[1])

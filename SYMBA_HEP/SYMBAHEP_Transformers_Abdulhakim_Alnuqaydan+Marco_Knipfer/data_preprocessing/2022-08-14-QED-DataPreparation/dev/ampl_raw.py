@@ -59,7 +59,6 @@ for amplitudes_folder, sqamplitudes_folder, name in zip(amplitudes_folders, sqam
         #     break
 
     # sqampls_prefix = []
-    # print("Loading squared amplitudes")
     # for exp in tqdm(sqampl_raw):
     #     # simplified = sp.factor(exp)   # worked best for simplification
     #     # prefix = sympy_to_prefix(simplified)

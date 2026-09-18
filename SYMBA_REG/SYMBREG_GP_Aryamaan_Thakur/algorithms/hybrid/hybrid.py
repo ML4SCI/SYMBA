@@ -46,7 +46,6 @@ class HybridPredictor:
         for expression in expressions:
             try:
                 expression = expression.type(torch.long)[0].tolist()
-                # print(f"{expression=}")
                 expression = self.tokenizer.reverse_tokenize([expression[1:-1]])[0]
                 #expression = prefix_to_sympy(expressions)
                 if expression not in valid:
@@ -98,10 +97,8 @@ class HybridPredictor:
         num_vars = X.shape[1]
         x, num_array = self.format_data_for_transformer(X, y)
         expressions = self.generate_expressions(x, num_array)
-        #print(f"{expressions[0]=}")
         
         expressions = self.validate_expressions(expressions, num_vars)
-        #print(f"{expressions[0]=}")
         candidates = []
         for expression in expressions:
             try:

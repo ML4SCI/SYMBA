@@ -260,15 +260,12 @@ class Encoder_tokeniser(Tokenizer):
                 if x[0] not in ["-", "+", "E", "N"]:
                     return np.nan
             try:
-#                 print(val)
                 sign = 1 if val[0] == "+" else -1
                 mant = ""
                 for x in val[1:-1]:
                     mant += x[1:]
                 mant = int(mant)
-#                 print(mant)
                 exp = int(val[-1][1:])
-#                 print(exp)
                 value = sign * mant * (10 ** exp)
                 value = float(value)
             except Exception:

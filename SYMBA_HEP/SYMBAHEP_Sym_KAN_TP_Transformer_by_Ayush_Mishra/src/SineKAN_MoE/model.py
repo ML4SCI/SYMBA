@@ -290,7 +290,6 @@ class Transformer(nn.Module):
     dec_output = decod_embed
     for decoder in self.decoder:
       dec_output = decoder(dec_output , enc_output , src_mask , tgt_mask )
-    # print("Decoder output " , dec_output)
     out = self.ff(dec_output)
 
     # out = self.ff(dec_output)

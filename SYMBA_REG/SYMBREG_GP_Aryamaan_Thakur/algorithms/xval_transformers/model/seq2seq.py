@@ -47,7 +47,6 @@ class xValEmbedder(nn.Module):
 
     def forward(self, tokens, num_array):
         out = self.embedding(tokens.long()) * math.sqrt(self.emb_size)
-        # print("embeds", out.shape)
         out = self.layer_norm(out)
         out *= num_array.unsqueeze(-1)
         return out
@@ -68,15 +67,12 @@ class LinearPointEmbedder(nn.Module):
         #dims = torch.tensor(out.size(1)*out.size(2)*out.size(3))
         #mag_norm = 5/torch.sqrt(dims)
         #out += torch.zeros_like(out).uniform_(-mag_norm, mag_norm)
-        #print("embed", out.shape)
-        #print("num", num_array.shape)
         bs, n = out.shape[0], out.shape[1]
         out *= num_array.unsqueeze(-1)
         out = out.view(bs, n, -1)
         out = self.activation(self.fc1(out))
         out = self.dropout(out)
         out = self.fc2(out)
-        #print("out", out.shape)
         return out
 
 class Model(nn.Module):

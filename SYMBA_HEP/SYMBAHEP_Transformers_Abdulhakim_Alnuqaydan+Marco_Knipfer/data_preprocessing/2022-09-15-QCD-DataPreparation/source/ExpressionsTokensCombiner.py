@@ -13,14 +13,6 @@ def fix_i_match(matchobj):
     """
     match = matchobj.group(0)
     return match.replace("i", "I")
-    # if int(match[1]) % 2 != 0:
-    #     print("asdf")
-    # exponent = int(match[1]) // 2
-    # m, m_name = match[0].split("_")
-    # if exponent == 1:
-    #     return m+"2"+m_name
-    # else:
-    #     return m+"2"+m_name + "**" + str(exponent)
     
 
 def combine_m_match(matchobj):
