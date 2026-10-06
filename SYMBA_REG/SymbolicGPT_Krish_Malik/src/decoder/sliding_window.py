@@ -15,10 +15,28 @@ from torch.utils.data import Dataset, DataLoader, random_split
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+EMBEDDINGS_PATH = (
+    PROJECT_ROOT / "src" / "embeddings" / "tnet_embeddings_new.json"
+)
+LABELS_PATH = (
+    PROJECT_ROOT / "src" / "labels" / "tokenized_gpt_labels_with_full_funcs.json"
+)
+CHECKPOINT_PATH = (
+    PROJECT_ROOT / "data" / "symbolic_gpt_decoder_sparse_regularized.pth"
+)
+DEBUG_CHECKPOINT_PATH = (
+    PROJECT_ROOT / "data" / "symbolic_gpt_decoder_sparse_debugged.pth"
+)
+PREDICTIONS_PATH = PROJECT_ROOT / "data" / "predictions.json"
+
 # 1. Load Data
-with open("/content/tnet_embeddings_new.json", "r") as f:
+with open(EMBEDDINGS_PATH, "r") as f:
     embeddings_data = json.load(f)
-with open("/content/tokenized_gpt_labels_with_full_funcs.json", "r") as f:
+with open(LABELS_PATH, "r") as f:
     label_data = json.load(f)
 
 X = [torch.tensor(e["embedding"], dtype=torch.float32) for e in embeddings_data]
@@ -200,7 +218,7 @@ plt.legend()
 plt.grid()
 plt.show()
 
-torch.save(model.state_dict(), "symbolic_gpt_decoder_sparse_debugged.pth")
+torch.save(model.state_dict(), DEBUG_CHECKPOINT_PATH)
 
 """### Better generalisation and early stopping"""
 
@@ -213,9 +231,9 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
 # 1. Load Data
-with open("/content/tnet_embeddings_new.json", "r") as f:
+with open(EMBEDDINGS_PATH, "r") as f:
     embeddings_data = json.load(f)
-with open("/content/tokenized_gpt_labels_with_full_funcs.json", "r") as f:
+with open(LABELS_PATH, "r") as f:
     label_data = json.load(f)
 
 X = [torch.tensor(e["embedding"], dtype=torch.float32) for e in embeddings_data]
@@ -385,7 +403,7 @@ plt.legend()
 plt.grid()
 plt.show()
 
-torch.save(model.state_dict(), "symbolic_gpt_decoder_sparse_regularized.pth")
+torch.save(model.state_dict(), CHECKPOINT_PATH)
 
 """## PREDICTIONS.json"""
 
@@ -397,7 +415,7 @@ from torch.utils.data import DataLoader
 # -----------------------------
 # 1. Load dataset + vocab
 # -----------------------------
-with open("/content/tokenized_gpt_labels_with_full_funcs.json", "r") as f:
+with open(LABELS_PATH, "r") as f:
     label_data = json.load(f)
 
 vocab = label_data["vocab"]
@@ -411,7 +429,7 @@ eos_token_id = vocab["<EOS>"]
 # -----------------------------
 # 2. Load embeddings
 # -----------------------------
-with open("/content/tnet_embeddings_new.json", "r") as f:
+with open(EMBEDDINGS_PATH, "r") as f:
     embeddings_data = json.load(f)
 
 X = [torch.tensor(e["embedding"], dtype=torch.float32) for e in embeddings_data]
@@ -503,7 +521,7 @@ class SymbolicDecoder(nn.Module):
 # -----------------------------
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-checkpoint = torch.load("/content/symbolic_gpt_decoder_sparse_regularized.pth", map_location=device)
+checkpoint = torch.load(CHECKPOINT_PATH, map_location=device)
 pos_embedding_shape = checkpoint['pos_embedding'].shape
 saved_max_len = pos_embedding_shape[1] - 1
 
@@ -565,7 +583,7 @@ with torch.no_grad():
 # -----------------------------
 # 7. Save predictions.json
 # -----------------------------
-with open("/content/predictions.json", "w") as f:
+with open(PREDICTIONS_PATH, "w") as f:
     json.dump(predictions, f, indent=2)
 
 print("✅ Predictions saved to predictions.json")
