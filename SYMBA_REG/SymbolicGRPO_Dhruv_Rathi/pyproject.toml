@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "symbolic-grpo"
+version = "0.1.0"
+description = "Group-relative policy refinement for transformer-seeded symbolic regression"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "deap>=1.4.1",
+    "loguru>=0.7.3",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "sympy>=1.12",
+    "torch>=2.7.0",
+    "tqdm>=4.65.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["symba_grpo"]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", marker = "sys_platform == 'darwin'" },
+    { index = "pytorch-cu128", marker = "sys_platform != 'darwin'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
